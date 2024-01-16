@@ -1,0 +1,54 @@
+% Defaults to one column, but has a twocolumn option
+%\documentclass[twocolumn]{cicirello}
+\documentclass{cicirello}
+% Keep in first 5 lines of tex file in support of submitting to arXiv 
+\pdfoutput=1
+
+\usepackage{lipsum}
+
+\title{Testing My Custom LaTeX Class}
+\author{Firstname M. Lastname}
+\orcid{0000-0000-0000-0000}
+\reportnum{VAC-TR-00-0000}
+\reporturl{https://reports.cicirello.org/}
+\copyrightyear{2024}
+\date{January 2024}
+
+\address{Computer Science\\
+Stockton University\\
+Galloway, NJ 08205 USA\\
+\url{https://www.cicirello.org/}
+}
+
+%% Set these here before \begin{document}
+%% All of these are optional.
+\keywords{hello, world, goodbye, sky}
+\ACM{I.2.8; F.2.2; G.2.1}
+\MSC{68W50}
+
+%% Use this to set the Subject property within the
+%% pdf metadata. This is optional. This does not 
+%% appear in the pdf content itself. For search
+%% engine's use should probably be at most a couple
+%% hundred characters in length. Think of it as a very
+%% short version of abstract.
+\subject{Here is an abridged version of my abstract.}
+
+%% My Tech Report class redefines abstract as a command
+%% so put here (abstract no longer an environment).
+\abstract{\lipsum[1]}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Hello}
+
+\lipsum[2-6]
+
+\section{World}
+
+Here is another section.
+
+\end{document}
