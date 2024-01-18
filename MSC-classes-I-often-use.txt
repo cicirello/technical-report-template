@@ -1,0 +1,106 @@
+68-04 Software, source code, etc. for problems pertaining to computer science
+68-11 Research data for problems pertaining to computer science
+
+68N19 Other programming paradigms (object-oriented, sequential, concurrent, automatic, etc.)
+68N30 Mathematical aspects of software engineering (specification, verification, metrics, requirements, etc.)
+
+68P05 Data structures
+68P10 Searching and sorting
+68P20 Information storage and retrieval of data
+
+68Q07 Biologically inspired models of computation (DNA computing, membrane computing, etc.)
+68Q10 Modes of computation (nondeterministic, parallel, interactive, probabilistic, etc.) [See also 68Q85]
+68Q25 Analysis of algorithms and problem complexity [See also 68W40]
+68Q32 Computational learning theory [See also 68T05]
+68Q85 Models and methods for concurrent and distributed computing (process algebras, bisimulation, transition nets, etc.)
+68Q87 Probability in computer science (algorithm analysis, random structures, phase transitions, etc.) [See also 68W20, 68W40]
+
+68R05 Combinatorics in computer science
+68R07 Computational aspects of satisfiability [See also 68T20]
+68R10 Graph theory (including graph drawing) in computer science [See also 05Cxx, 90B10, 90C35]
+
+68T05 Learning and adaptive systems in artificial intelligence [See also 68Q32]
+68T20 Problem solving in the context of artificial intelligence (heuristics, search strategies, etc.)
+68T40 Artificial intelligence for robotics [See also 93C85]
+68T42 Agent technology and artificial intelligence
+
+68U07 Computer science aspects of computer-aided design {For methods of numerical mathematics, see 65D17}
+
+68W05 Nonnumerical algorithms
+68W10 Parallel algorithms in computer science
+68W15 Distributed algorithms
+68W20 Randomized algorithms
+68W25 Approximation algorithms
+68W27 Online algorithms; streaming algorithms
+68W32 Algorithms on strings
+68W35 Hardware implementations of nonnumerical algorithms (VLSI algorithms, etc.) [See also 68M07]
+68W40 Analysis of algorithms [See also 68Q25]
+68W50 Evolutionary algorithms, genetic algorithms (computational aspects) [See also 68T05, 68T20, 90C59]
+
+
+05-04 Software, source code, etc. for problems pertaining to combinatorics
+05-11 Research data for problems pertaining to combinatorics
+
+05A05 Permutations, words, matrices
+05A10 Factorials, binomial coefficients, combinatorial functions [See also 11B65, 33Cxx]
+05A15 Exact enumeration problems, generating functions [See also 33Cxx, 33Dxx]
+
+05C05 Trees
+05C10 Planar graphs; geometric and topological aspects of graph theory [See also 57K10, 57M15]
+05C12 Distance in graphs
+05C20 Directed graphs (digraphs), tournaments
+05C22 Signed and weighted graphs
+05C25 Graphs and abstract algebra (groups, rings, fields, etc.) [See also 20F65]
+05C30 Enumeration in graph theory
+
+
+60-04 Software, source code, etc. for problems pertaining to probability theory
+60-11 Research data for problems pertaining to probability theory
+
+60C05 Combinatorial probability
+60E05 Probability distributions: general theory
+60G15 Gaussian processes
+60G70 Extreme value theory; extremal stochastic processes
+
+62-04 Software, source code, etc. for problems pertaining to statistics
+62-11 Research data for problems pertaining to statistics
+
+62E10 Characterization and structure theory of statistical distributions
+62E15 Exact distribution theory in statistics
+62E17 Approximations to statistical distributions (nonasymptotic)
+62E20 Asymptotic distribution theory in statistics
+62E86 Fuzziness in connection with statistical distrib
+62G32 Statistics of extreme values; tail inference
+62P30 Applications of statistics in engineering and industry; control charts
+62R07 Statistical aspects of big data and data science {For computer science aspects, see 68T09; for informationtheoretic aspects, see 94A16}
+
+65C05 Monte Carlo methods [See also 82M31]
+65C10 Random number generation in numerical analysis [See also 11K45]
+65C20 Probabilistic models, generic numerical methods in probability and statistics [See also 60-08, 62-08]
+65C35 Stochastic particle methods [See also 82M60]
+
+90C27 Combinatorial optimization
+
+91A05 2-person games
+91A06 n-person games, n > 2
+91A07 Games with infinitely many players
+91A10 Noncooperative games
+91A12 Cooperative games
+91A15 Stochastic games, stochastic differential games
+91A18 Games in extensive form
+91A20 Multistage and repeated games
+91A22 Evolutionary games
+91A24 Positional games (pursuit and evasion, etc.) [See also 49N75]
+91A25 Dynamic games
+91A26 Rationality and learning in game theory
+91A27 Games with incomplete information, Bayesian games
+91A68 Algorithmic game theory and complexity [See also 68Qxx, 68Wxx]
+91A80 Applications of game theory
+
+97P10 Comprehensive works on computer science (educational aspects)
+97P20 Theoretical computer science (educational aspects)
+97P30 Systems, databases (educational aspects)
+97P40 Programming languages (educational aspects)
+97P50 Programming techniques (educational aspects)
+97P80 Artificial intelligence (educational aspects)
+
