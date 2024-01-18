@@ -1,0 +1,38 @@
+D.1.3 Concurrent Programming
+
+D.2.13 Reusable Software
+
+E.1 DATA STRUCTURES
+E.2 DATA STORAGE REPRESENTATIONS
+
+F.2 ANALYSIS OF ALGORITHMS AND PROBLEM COMPLEXITY
+F.2.1 Numerical Algorithms and Problems
+F.2.2 Nonnumerical Algorithms and Problems 
+
+G.1 NUMERICAL ANALYSIS
+G.1.2 Approximation
+G.1.6 Optimization
+
+G.2 DISCRETE MATHEMATICS
+G.2.1 Combinatorics
+G.2.2 Graph Theory 
+
+G.3 PROBABILITY AND STATISTICS
+
+G.4 MATHEMATICAL SOFTWARE
+
+I.1 SYMBOLIC AND ALGEBRAIC MANIPULATION
+I.1.1 Expressions and Their Representation (E.1, E.2)
+I.1.2 Algorithms (F.2.1, F.2.2)
+
+I.2 ARTIFICIAL INTELLIGENCE
+I.2.1 Applications and Expert Systems
+I.2.6 Learning
+I.2.8 Problem Solving, Control Methods, and Search
+I.2.9 Robotics
+I.2.11 Distributed Artificial Intelligence
+
+J.2 PHYSICAL SCIENCES AND ENGINEERING
+J.6 COMPUTER-AIDED ENGINEERING
+
+K.3.2 Computer and Information Science Education
