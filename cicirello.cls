@@ -184,9 +184,8 @@
 	{\Large
 	  \lineskip .75em%
       \begin{tabular}[t]{l@{}l}%
-        \multirow{3}{*}[7pt]{\cicirellologo} & The {\itshape Technical Report} series of Cicirello.org is\\ 
-		& available via the Internet at:\\
-		& \url{https://reports.cicirello.org/}
+        \multirow[b]{2}{*}[-2pt]{\cicirellologo} & The {\itshape Technical Report} series of Cicirello.org is available via\\ 
+		& the Internet at:\url{https://reports.cicirello.org/}
       \end{tabular}}%	  
   \end{center}
   \vfil\null
