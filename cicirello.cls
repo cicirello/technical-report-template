@@ -41,6 +41,8 @@
 \abstract{}
 \DeclareRobustCommand*\reporturl[1]{\gdef\@reporturl{#1}}
 \reporturl{}
+\DeclareRobustCommand*\citeas[1]{\gdef\@citeas{#1}}
+\citeas{}
 
 \AtEndPreamble{%
   \pdfinfo{
@@ -93,6 +95,15 @@
 %% }
 
 \def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+
+\newcommand\insertcitation{%
+  \begingroup
+  \ifx\@citeas\@empty {} \else%
+    {\Large \begin{minipage}{\textwidth}Cite as:\\ \@citeas\end{minipage}}
+	\vskip 1em
+  \fi
+  \endgroup
+}
 
 \newcommand\orcidfootnote{%
   \begingroup
@@ -156,13 +167,13 @@
       \begin{tabular}[t]{c}%
         \@author
       \end{tabular}\par}%
-      \vskip 3.5em%
+      \vskip 3.1em%
 	{\LARGE
      \lineskip .75em%
       \begin{tabular}[t]{c}%
         \@address
       \end{tabular}\par}%
-      \vskip 3.5em%
+      \vskip 3.1em%
 	{\LARGE
 	  \lineskip .75em%
       \begin{tabular}[t]{c}%
@@ -173,8 +184,9 @@
 	  \lineskip .75em%
       \begin{tabular}[t]{c}%
         \@date
-      \end{tabular}\par}% 
-      \vskip 3.5em%
+      \end{tabular}\par}%
+      \vskip 3.1em%
+	  \insertcitation
     {\Large
 	  \lineskip .75em%
       \begin{tabular}[t]{c}%
@@ -185,7 +197,7 @@
 	  \lineskip .75em%
       \begin{tabular}[t]{l@{}l}%
         \multirow[b]{2}{*}[-2pt]{\cicirellologo} & The {\itshape Technical Report} series of Cicirello.org is available via\\ 
-		& the Internet at:\url{https://reports.cicirello.org/}
+		& the Internet at: \url{https://reports.cicirello.org/}
       \end{tabular}}%	  
   \end{center}
   \vfil\null
@@ -223,6 +235,8 @@
   \global\let\abstract\relax
   \global\let\@reporturl\@empty
   \global\let\reporturl\relax
+  \global\let\@citeas\@empty
+  \global\let\citeas\relax
 }
 
 \newcommand{\makeremainderoftitle}{%
@@ -263,6 +277,11 @@
 		  \else%
 		    \begin{quote}%
 		    \textbf{MSC Classes:} \@MSC%
+			\ifx\@citeas\empty {}%
+		    \else%
+		  
+		      \textbf{Cite as:} \@citeas%
+		    \fi%
 			\end{quote}%
 		  \fi%
 		\else%
@@ -272,6 +291,11 @@
 		  \else%
 				
 		    \textbf{MSC Classes:} \@MSC%
+		  \fi%
+		  \ifx\@citeas\empty {}%
+		  \else%
+		  
+		    \textbf{Cite as:} \@citeas%
 		  \fi%
 		  \end{quote}%
 		\fi
@@ -288,6 +312,11 @@
 				
 		  \textbf{MSC Classes:} \@MSC%
 		\fi%
+		\ifx\@citeas\empty {}%
+		\else%
+		  
+		  \textbf{Cite as:} \@citeas%
+		\fi%
 		\end{quote}
 	  \fi%
 }
@@ -295,10 +324,9 @@
 \setlength{\textwidth}{6.5in}
 \setlength{\oddsidemargin}{0in}
 \setlength{\evensidemargin}{0in}
-\setlength{\topmargin}{0in}
-\setlength{\textheight}{9in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textheight}{9.5in}
 \setlength{\headheight}{12pt}
 \addtolength{\textheight}{-\footskip}
 \addtolength{\textheight}{-\headheight}
 \addtolength{\textheight}{-\headsep}
-
