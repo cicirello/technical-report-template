@@ -99,8 +99,8 @@
 \newcommand\insertcitation{%
   \begingroup
   \ifx\@citeas\@empty {} \else%
-    {\Large \begin{minipage}{\textwidth}Cite as:\\ \@citeas\end{minipage}}
-	\vskip 1em
+    \vskip 1em
+	{\Large \fbox{\begin{minipage}{\textwidth}Cite as:\\ \@citeas\end{minipage}}}
   \fi
   \endgroup
 }
@@ -186,8 +186,7 @@
         \@date
       \end{tabular}\par}%
       \vskip 3.1em%
-	  \insertcitation
-    {\Large
+	{\Large
 	  \lineskip .75em%
       \begin{tabular}[t]{c}%
         Copyright \copyright\ \@copyrightyear\ \@author
@@ -198,8 +197,9 @@
       \begin{tabular}[t]{l@{}l}%
         \multirow[b]{2}{*}[-2pt]{\cicirellologo} & The {\itshape Technical Report} series of Cicirello.org is available via\\ 
 		& the Internet at: \url{https://reports.cicirello.org/}
-      \end{tabular}}%	  
+      \end{tabular}}%
   \end{center}
+  \insertcitation
   \vfil\null
   \end{titlepage}%
   \hypersetup{pageanchor=true}
