@@ -44,7 +44,7 @@
 \DeclareRobustCommand*\citeas[1]{\gdef\@citeas{#1}}
 \citeas{}
 \DeclareRobustCommand*\citetype[1]{\gdef\@citetype{#1}}
-\citetype{Journal ref:}
+\citetype{Journal ref}
 
 \AtEndPreamble{%
   \pdfinfo{
@@ -102,7 +102,7 @@
   \begingroup
   \ifx\@citeas\@empty {} \else%
     \vskip 1em
-	{\Large \fbox{\begin{minipage}{\citeboxwidth}\@citetype\\ \@citeas\end{minipage}}}
+	{\Large \fbox{\begin{minipage}{\citeboxwidth}\@citetype:\\ \@citeas\end{minipage}}}
   \fi
   \endgroup
 }
@@ -284,7 +284,7 @@
 			\ifx\@citeas\empty {}%
 		    \else%
 		  
-		      \textbf{\@citetype} \@citeas%
+		      \textbf{\@citetype:} \@citeas%
 		    \fi%
 			\end{quote}%
 		  \fi%
@@ -299,7 +299,7 @@
 		  \ifx\@citeas\empty {}%
 		  \else%
 		  
-		    \textbf{\@citetype} \@citeas%
+		    \textbf{\@citetype:} \@citeas%
 		  \fi%
 		  \end{quote}%
 		\fi
@@ -319,7 +319,7 @@
 		\ifx\@citeas\empty {}%
 		\else%
 		  
-		  \textbf{\@citetype} \@citeas%
+		  \textbf{\@citetype:} \@citeas%
 		\fi%
 		\end{quote}
 	  \fi%
