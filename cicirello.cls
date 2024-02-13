@@ -102,7 +102,7 @@
   \begingroup
   \ifx\@citeas\@empty {} \else%
     \vskip 1em
-	{\Large \fbox{\begin{minipage}{\citeboxwidth}\@citetype:\\ \@citeas\end{minipage}}}
+	{\Large \fbox{\begin{minipage}{\citeboxwidth}\textbf{\@citetype:}\\ \@citeas\end{minipage}}}
   \fi
   \endgroup
 }
