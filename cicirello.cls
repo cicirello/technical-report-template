@@ -43,6 +43,8 @@
 \reporturl{}
 \DeclareRobustCommand*\citeas[1]{\gdef\@citeas{#1}}
 \citeas{}
+\DeclareRobustCommand*\citetype[1]{\gdef\@citetype{#1}}
+\citetype{Journal ref:}
 
 \AtEndPreamble{%
   \pdfinfo{
@@ -100,7 +102,7 @@
   \begingroup
   \ifx\@citeas\@empty {} \else%
     \vskip 1em
-	{\Large \fbox{\begin{minipage}{\textwidth}Cite as:\\ \@citeas\end{minipage}}}
+	{\Large \fbox{\begin{minipage}{\citeboxwidth}\@citetype\\ \@citeas\end{minipage}}}
   \fi
   \endgroup
 }
@@ -237,6 +239,8 @@
   \global\let\reporturl\relax
   \global\let\@citeas\@empty
   \global\let\citeas\relax
+  \global\let\@citetype\@empty
+  \global\let\citetype\relax
 }
 
 \newcommand{\makeremainderoftitle}{%
@@ -280,7 +284,7 @@
 			\ifx\@citeas\empty {}%
 		    \else%
 		  
-		      \textbf{Cite as:} \@citeas%
+		      \textbf{\@citetype} \@citeas%
 		    \fi%
 			\end{quote}%
 		  \fi%
@@ -295,7 +299,7 @@
 		  \ifx\@citeas\empty {}%
 		  \else%
 		  
-		    \textbf{Cite as:} \@citeas%
+		    \textbf{\@citetype} \@citeas%
 		  \fi%
 		  \end{quote}%
 		\fi
@@ -315,7 +319,7 @@
 		\ifx\@citeas\empty {}%
 		\else%
 		  
-		  \textbf{Cite as:} \@citeas%
+		  \textbf{\@citetype} \@citeas%
 		\fi%
 		\end{quote}
 	  \fi%
@@ -330,3 +334,7 @@
 \addtolength{\textheight}{-\footskip}
 \addtolength{\textheight}{-\headheight}
 \addtolength{\textheight}{-\headsep}
+
+\newlength{\citeboxwidth}
+\setlength{\citeboxwidth}{\textwidth}
+\addtolength{\citeboxwidth}{-6.79pt}
