@@ -57,7 +57,7 @@
     keeppdfinfo,
     pdftitle={\@title},
     pdfauthor={\@author},
-	pdfsubject={\@subject},
+	pdfsubject={\ifx\@subject\@empty {\@abstract} \else {\@subject} \fi},
 	pdfkeywords={\@keywords},
 	pdfcopyright={Copyright (C) \@copyrightyear\ \@author},
     pdfpublisher={Cicirello.org},
