@@ -3,7 +3,7 @@
 %%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{cicirello}[2024/01/16 Cicirello.org Technical Reports]
+\ProvidesClass{cicirello}[2024/02/15 Cicirello.org Technical Reports]
 
 \DeclareOption{twocolumn}{\@twocolumntrue\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
@@ -112,7 +112,7 @@
   \ifx\@orcid\@empty {\vskip 1.5em} \else%
     \WarningsOff[hyperref]
     \blfootnote{\kern-1.5em \href{https://orcid.org/\@orcid}{\orcidicon}
-	  \hypertarget{orcidtarget}{\url{https://orcid.org/\@orcid}}}%
+	  \url{https://orcid.org/\@orcid}}%
 	\WarningsOn[hyperref]
   \fi
   \endgroup
@@ -253,9 +253,7 @@
     {\Large
       \lineskip .5em%
       \begin{tabular}[t]{c}%
-        \@author \ifx\@orcid\@empty {} 
-		  \else \raisebox{0.25em}{\hyperlink{orcidtarget}{\orcidicon}}
-		  \fi
+        \@author
       \end{tabular}\par}%
 	\vskip 1em%
     {\large \@address}%
